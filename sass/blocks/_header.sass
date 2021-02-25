@@ -1,0 +1,63 @@
+.header
+  // background-color: red
+  display: flex
+  justify-content: space-between
+  &__logo
+    display: flex
+    flex-wrap: wrap
+    width: 160px
+    text-decoration: none
+    text-align: center
+    &-text
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 9.6px
+      line-height: 110%
+      color: #24242E
+  &__list
+    display: flex
+  &__link
+    text-decoration: none
+    font-family: $mainFont
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 110%
+    text-align: center
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #24242E
+    margin: 0 16px
+    padding: 10px 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: -9px
+      display: block
+      width: 100%
+      transform: scaleX(0)
+      height: 4px
+      background-color: #1E489B
+      transition: 0.2s
+    &:hover:before
+      transform: scaleX(1)
+  &__contact
+    width: 200px
+    font-family: $mainFont
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    font-style: normal
+    font-weight: normal
+    &-number
+      font-size: 18px
+      line-height: 27px
+      color: #24242E
+    &-booking
+      font-size: 14px
+      line-height: 21px
+      color: #1E489B
+      text-decoration: none
