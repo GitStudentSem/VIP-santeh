@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#type" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пурнемцев Семён</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:title" content="Семён Пурнемцев" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:description" content="Сайт визитка Пурнемцев Семен" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:site_name" content="Семен Пурнемцев" />
+    <meta name="description" content="Сайт визитка Пурнемцева Семёна" />
+    <meta name="keywords" content="визитка Семён Пурнемцев" />
+    <meta name="Author" content="Семен Пурнемцев" />
+    <meta name="Copyright" content="Семен Пурнемцев" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Домой</a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">Обо мне</a>
+            </li>
+            <li class="header__item">
+              <a href="#skills" class="header__link">Навыки</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Порфолио</a>
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__line"></div>
+        <button aria-label="Мобильное меню" class="burger"></button>
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="name container">
+      <h1 class="name__name">Семён Пурнемцев</h1>
+      <p class="name__info">
+        WEB дизайнер <br />
+        21 год, Архангельск
+      </p>
+      <a href="https://vk.me/purnemtsev" target="_blank" class="call"
+        >Связаться</a
+      >
+    </section>
+    <section
+      class="about"
+      id="about"
+      data-parallax="scroll"
+      data-speed="0.1"
+      data-image-src="img/about/parallax.jpg"
+      data-androidFix="false"
+    >
+      <div class="container">
+        <h2 class="about__title">Обо мне</h2>
+        <p class="about__text">
+          Привет, я Семён, WEB-дизайнер из Архангельска.
+        </p>
+        <p class="about__text">
+          Я учился на курсе «Web Start 11.0» от GloAcademy.
+        </p>
+        <p class="about__text">
+          Готов выполнять интересные проекты с замечательными людьми.
+        </p>
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="skills__title">Навыки</h2>
+      <p class="skills__text">
+        Умею работать с такими программами и <br />
+        технологиями как
+      </p>
+      <div class="skills__wrapper">
+        <div class="skill">
+          <img
+            src="img/skill/VSCode-Icon.svg"
+            alt="VS Code"
+            class="skill__image"
+            title="VS Code"
+          /><span class="skill__name">VS Code</span>
+          <!-- /.skill__name -->
+        </div>
+        <!-- /.skill -->
+        <div class="skill">
+          <img
+            src="img/skill/CSS-icon.svg"
+            alt="CSS-3"
+            class="skill__image"
+            title="CSS-3"
+          /><span class="skill__name">CSS 3</span>
+          <!-- /.skill__name -->
+        </div>
+        <!-- /.skill -->
+        <div class="skill">
+          <img
+            src="img/skill/HTML-icon.svg"
+            alt="HTML-5"
+            class="skill__image"
+            title="HTML-5"
+          /><span class="skill__name">HTML 5</span>
+          <!-- /.skill__name -->
+        </div>
+        <!-- /.skill -->
+        <div class="skill">
+          <img
+            src="img/skill/Figma.svg"
+            alt="Figma"
+            class="skill__image"
+            title="Figma"
+          /><span class="skill__name">Figma</span>
+          <!-- /.skill__name -->
+        </div>
+        <!-- /.skill -->
+      </div>
+      <!-- /.skills__wrapper -->
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">Портфолио</h2>
+        <div class="portfolio__wrapper">
+          <div class="portfolio__card">
+            <div class="portfolio__img">
+              <picture>
+                <source
+                  class="portfolio__image"
+                  srcset="img/portfolio/Building-control-main.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="portfolio__image"
+                  title="Сайт кампании 'Стройконтрль'"
+                  src="img/portfolio/Building-control-main.png"
+                  alt="Сайт кампании 'Стройконтрль'"
+                />
+              </picture>
+            </div>
+            <!-- /.portfolio__img -->
+            <a
+              href="https://portfolio.semen-purnemcev.ru/building-control/"
+              class="portfolio__text"
+              target="_blank"
+              >Строительная кампания - Стройконтроль</a
+            >
+          </div>
+          <!-- /.portfolio__card -->
+        </div>
+        <!-- /.portfolio__wrapper -->
+        <div class="portfolio__wrapper">
+          <div class="portfolio__card">
+            <div class="portfolio__img">
+              <picture>
+                <source
+                  class="portfolio__image"
+                  srcset="img/portfolio/Superpeer-main.webp"
+                  type="image/webp"
+                />
+                <img
+                  title="Видео платформа - superpeer"
+                  class="portfolio__image"
+                  src="img/portfolio/Superpeer-main.png"
+                  alt="Видео платформа - superpeer"
+                />
+              </picture>
+            </div>
+            <!-- /.portfolio__img -->
+            <a
+              href="https://portfolio.semen-purnemcev.ru/superpeer/"
+              class="portfolio__text"
+              target="_blank"
+              >Видео платформа - superpeer</a
+            >
+          </div>
+          <!-- /.portfolio__card -->
+        </div>
+        <!-- /.portfolio__wrapper -->
+        <div class="portfolio__wrapper">
+          <div class="portfolio__card">
+            <div class="portfolio__img">
+              <picture>
+                <source
+                  class="portfolio__image"
+                  srcset="img/portfolio/E&T.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="portfolio__image"
+                  src="img/portfolio/E&T.jpg"
+                  alt="Поисковик для путешествий - Explore and Travel"
+                  title="Поисковик для путешествий - Explore and Travel"
+                />
+              </picture>
+            </div>
+            <!-- /.portfolio__img -->
+            <a
+              href="https://portfolio.semen-purnemcev.ru/travel-and-tours/"
+              class="portfolio__text"
+              target="_blank"
+            >
+              Поисковик для путешествий - Explore and Travel
+            </a>
+          </div>
+          <!-- /.portfolio__card -->
+        </div>
+        <!-- /.portfolio__wrapper -->
+        <div class="portfolio__wrapper">
+          <div class="portfolio__card">
+            <div class="portfolio__img">
+              <picture>
+                <source
+                  class="portfolio__image"
+                  srcset="img/portfolio/Virton.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="portfolio__image"
+                  src="img/portfolio/Virton.jpg"
+                  alt="Кампания по строительству деревянных домов и изделий"
+                  title="Кампания по строительству деревянных домов и изделий"
+                />
+              </picture>
+            </div>
+            <!-- /.portfolio__img -->
+            <a
+              href="https://portfolio.semen-purnemcev.ru/Virton/"
+              class="portfolio__text"
+              target="_blank"
+            >
+              Кампания по строительству деревянных домов и изделий
+            </a>
+          </div>
+          <!-- /.portfolio__card -->
+        </div>
+        <!-- /.portfolio__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <footer class="footer container" id="footer">
+      <h2 class="footer__title">Контакты</h2>
+      <p class="footer__text">
+        Хотите узнать больше или просто поболтать? <br />
+        Добро пожаловать!
+      </p>
+      <a href="https://vk.me/purnemtsev" target="_blank" class="call"
+        >Связаться</a
+      >
+      <div class="footer__social">
+        <a
+          href="https://www.instagram.com/purnemtsev_semen/"
+          target="_blank"
+          class="footer__social-link"
+          ><img
+            src="img/Footer/Iinstagram.svg"
+            alt="Инстаграмм"
+            class="footer__social-img"
+        /></a>
+        <a
+          href="https://vk.com/club190807184"
+          target="_blank"
+          class="footer__social-link"
+          ><img
+            src="img/Footer/VK.svg"
+            alt="Вконтакте"
+            class="footer__social-img"
+        /></a>
+        <a
+          href="https://github.com/GitStudentSem"
+          target="_blank"
+          class="footer__social-link"
+          ><img
+            src="img/Footer/Git.svg"
+            alt="GitHub"
+            class="footer__social-img"
+        /></a>
+        <a
+          href="https://t.me/semen_purnemtzev"
+          target="_blank"
+          class="footer__social-link"
+          ><img
+            src="img/Footer/Telegram.svg"
+            alt="Телеграм"
+            class="footer__social-img"
+        /></a>
+      </div>
+      <div class="icons">
+        Автор иконок:
+        <a
+          class="icon"
+          href="https://www.flaticon.com/ru/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a class="icon" href="https://www.flaticon.com/ru/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        Автор иконок:
+        <a class="icon" href="https://www.freepik.com" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a class="icon" href="https://www.flaticon.com/ru/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
