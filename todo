@@ -5,3 +5,4 @@ font-family: 'Exo 2', sans-serif;
         <source media="(min-width: 1000px)" srcset="img/400x300.jpg" />
         <img src="img/avatar.jpg" alt="The president giving an award." />
       </picture>
+- анимамция выпадающего меню
