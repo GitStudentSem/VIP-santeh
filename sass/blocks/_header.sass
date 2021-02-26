@@ -1,5 +1,6 @@
 .header
-  // background-color: red
+  background-color: transparent
+  padding-top: 20px
   display: flex
   justify-content: space-between
   &__logo
@@ -8,6 +9,8 @@
     width: 160px
     text-decoration: none
     text-align: center
+    &-m
+      display: none
     &-text
       font-family: 'Exo 2', sans-serif
       font-style: normal
@@ -45,7 +48,7 @@
     &:hover:before
       transform: scaleX(1)
   &__contact
-    width: 200px
+    width: 160px
     font-family: $mainFont
     display: flex
     flex-wrap: wrap
@@ -61,3 +64,15 @@
       line-height: 21px
       color: #1E489B
       text-decoration: none
+.burger
+  z-index: 10
+  margin-right: 20px
+  display: none
+  border: none
+  width: 20px
+  height: 20px
+  background-image: url(../img/header/burger.svg)
+  background-repeat: no-repeat
+  background-color: transparent
+  cursor: pointer
+  background-size: 20px
