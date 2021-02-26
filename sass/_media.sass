@@ -2,16 +2,21 @@
   .container
     max-width: 95%
     margin: auto
+
   .header
     &__navigation
-      background-color: blue
-      position: absolute
-      padding-top: 50px
-      padding-left: 20px
-      top: 0
-      width: 95%
-      height: 100vh
-      z-index: 10
+      display: none
+      &-visible
+        overflow-y: hidden
+        display: block
+        background-color: blue
+        position: absolute
+        padding-top: 50px
+        padding-left: 20px
+        top: 0
+        width: 95%
+        height: 100vh
+        z-index: 10
     &__item
       margin-bottom: 20px
     &__list
@@ -24,11 +29,6 @@
       display: none
     &__logo
       display: none
-      &-text
-        &-m
-          position: absolute
-          right: 0
-          bottom: 0
       &-m
         margin-left: 20px
         z-index: 10
@@ -41,6 +41,28 @@
         font-size: 12px
         line-height: 16px
         color: #24242E
+      &-text
+        &-m
+          position: absolute
+          right: 0
+          bottom: 0
+    &__social
+      display: block
+      margin-bottom: 50px
+      &-link
+        height: 31px
+        width: 31px
+        margin-right: 30px
+    &__button
+      font-family: $mainFont
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 24px
+      color: #1E489B
+      border: none
+      padding: 23px 73px
+
   .burger
     display: block
 // @media (max-width: 768px)
