@@ -6,14 +6,16 @@
   .header
     &__navigation
       display: none
+      position: relative
       &-visible
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
         display: block
         background-color: #1E489B
-        position: absolute
         padding-top: 50px
         padding-left: 20px
-        top: 0
-        width: 98%
         height: 100vh
         z-index: 10
     &__item
@@ -64,5 +66,19 @@
 
   .burger
     display: block
-// @media (max-width: 768px)
-// @media (max-width: 480px)
+@media (max-width: 768px)
+  .main
+    // height: 400px
+    background: url(../img/main/main-bg-m.jpg) 0 0/100% auto no-repeat
+    &__description
+      padding-top: 70px
+      max-width: 340px
+    &__title
+      font-size: 20px
+    &__subtitle
+      font-size: 12px
+      line-height: 16px
+@media (max-width: 480px)
+  .main
+    &__description
+      max-width: 240px
