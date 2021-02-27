@@ -68,7 +68,6 @@
     display: block
 @media (max-width: 768px)
   .main
-    // height: 400px
     background: url(../img/main/main-bg-m.jpg) 0 0/100% auto no-repeat
     &__description
       padding-top: 70px
@@ -78,7 +77,32 @@
     &__subtitle
       font-size: 12px
       line-height: 16px
+
+  .video
+    &__preview
+      width: 100%
+    &__play
+      &::after
+        display: none
+
+  .main
+    margin-bottom: 68px
+    padding: 0
+    &__button
+      display: none
+@media (max-width: 500px)
+  .main
+    &__quality
+      &:last-child
+        margin-bottom: 0
 @media (max-width: 480px)
   .main
     &__description
       max-width: 240px
+
+  .video
+    &__title
+      font-size: 27px
+    &__play
+      height: 55px
+      width: 55px
