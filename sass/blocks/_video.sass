@@ -1,6 +1,16 @@
 .video
   margin-top: 62px
   margin-bottom: 103px
+  position: relative
+  &::after
+    content: ''
+    display: block
+    width: 639px
+    height: 268px
+    background: url(../img/video/dotted-line.svg) no-repeat
+    position: absolute
+    bottom: 0
+    right: 0
   &__title
     font-family: $mainFont
     font-style: normal
