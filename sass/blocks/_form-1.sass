@@ -1,0 +1,82 @@
+.form-1
+  background-color: #24242E
+  position: relative
+  padding: 45px 0
+  overflow: hidden
+  margin-bottom: 75px
+  &__form
+    margin-bottom: 20px
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    z-index: 9
+  &__description
+    font-family: $mainFont
+    font-style: normal
+    font-weight: bold
+    font-size: 27px
+    line-height: 120%
+    color: #FFFFFF
+    margin-bottom: 47px
+    max-width: 813px
+    position: relative
+    z-index: 11
+  &__input
+    background-color: #353542
+    border: none
+    padding: 21px 30px 21px 30px
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 27px
+    color: #ffffff
+    margin-right: 60px
+  &__button
+    height: 69px
+    padding: 0 114px
+    background-color: #1E489B
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 27px
+    color: #FFFFFF
+  &__footnote
+    display: block
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 120%
+    color: #FFFFFF
+  &__bg
+    position: absolute
+    right: 25%
+    top: 10%
+    &::after
+      content: ''
+      position: absolute
+      background-color: #1E489B
+      width: 55px
+      height: 55px
+      right: 100%
+      top: 0
+      transform: skew(30deg)
+    &-img
+      position: relative
+      z-index: 10
+    &__skew
+      height: 175px
+      width: 175px
+      transform: skew(-30deg)
+      background-color: #353542
+      &::after
+        content: ''
+        position: absolute
+        background-color: #353542
+        width: 119px
+        height: 119px
+        left: 100%
+        bottom: 100%
+        cursor: auto
