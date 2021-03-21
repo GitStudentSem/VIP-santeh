@@ -13,8 +13,8 @@ const swiper = new Swiper(".swiper-container", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".company__button-next",
+    prevEl: ".company__button-prev",
   },
 
   // If we need pagination
