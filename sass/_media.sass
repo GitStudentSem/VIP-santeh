@@ -18,6 +18,15 @@
       margin-right: 40px
       margin-bottom: 20px
 
+  .advantage
+    &__container
+      justify-content: center
+    &__card
+      max-width: 450px
+      &-text
+        margin-left: 20px
+        text-align: left
+
 @media (max-width: 1000px)
   .header
     &__navigation
@@ -116,6 +125,13 @@
       &-wrapper
         right: 50px
 
+  .advantage
+    &__card
+      max-width: 370px
+      &-text
+        text-align: center
+        margin-left: 0
+
 @media (max-width: 768px)
   .main
     background: url(../img/main/main-bg-m.jpg) 0 0/100% auto no-repeat
@@ -154,19 +170,38 @@
   .company
     &__description
       font-size: 27px
+    &__pagination
+      display: block
     &__button
       &-wrapper
         display: none
-
-  .swiper
-    &-pagination
-      display: block
 
 @media (max-width: 500px)
   .main
     &__quality
       &:last-child
         margin-bottom: 0
+
+  .advantage
+    &__description
+      font-size: 28px
+    &__border
+      border: 3px dashed #353542
+      width: 100px
+      height: 100px
+      margin-bottom: 0
+    &__card
+      flex-wrap: nowrap
+      max-width: 100%
+      justify-content: center
+      align-items: center
+      margin-bottom: 20px
+      &-text
+        margin-left: 10px
+        margin-bottom: 0
+        text-align: left
+        font-size: 16px
+        max-width: 200px
 
 @media (max-width: 480px)
   .main

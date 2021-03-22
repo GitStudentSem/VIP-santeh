@@ -1,21 +1,90 @@
 .advantage
   background-color: #24242E
+  padding: 50px 0
+  &__description
+    font-family: $mainFont
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 120%
+    color: #FFFFFF
+    text-align: center
+    margin-bottom: 50px
   &__container
-    position: relative
-  &__button
-    &-prev
-      position: absolute
-      left: 0
-      top: 50%
-      z-index: 5
-      height: 30px
-      width: 30px
-      background-color: red
-    &-next
-      position: absolute
-      right: 0
-      top: 50%
-      z-index: 5
-      height: 30px
-      width: 30px
-      background-color: red
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__card
+    max-width: 280px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    text-align: center
+    &-text
+      font-family: $mainFont
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 120%
+      color: #FFFFFF
+      margin-bottom: 40px
+      max-width: 280px
+  &__border
+    width: 147px
+    height: 147px
+    border-radius: 50%
+    border: 5px dashed #353542
+    transition: 0.5s all ease
+    margin-bottom: 20px
+    &:hover
+      border: 5px dashed #1E489B
+  &__image
+    &-1
+      background-image: url(../img/advantage/grey/icon-1.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-1-b.svg)
+    &-2
+      background-image: url(../img/advantage/grey/icon-2.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-2-b.svg)
+    &-3
+      background-image: url(../img/advantage/grey/icon-3.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-3-b.svg)
+    &-4
+      background-image: url(../img/advantage/grey/icon-4.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-4-b.svg)
+    &-5
+      background-image: url(../img/advantage/grey/icon-5.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-5-b.svg)
+    &-6
+      background-image: url(../img/advantage/grey/icon-6.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-6-b.svg)
+    &-7
+      background-image: url(../img/advantage/grey/icon-7.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-7-b.svg)
+    &-8
+      background-image: url(../img/advantage/grey/icon-8.svg)
+      background-repeat: no-repeat
+      background-position: center
+      &:hover
+        background-image: url(../img/advantage/blue/icon-8-b.svg)
