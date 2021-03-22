@@ -27,6 +27,9 @@
         margin-left: 20px
         text-align: left
 
+  .guarantee
+    margin-bottom: 100px
+
 @media (max-width: 1000px)
   .header
     &__navigation
@@ -132,6 +135,32 @@
         text-align: center
         margin-left: 0
 
+  .guarantee
+    &__cards
+      justify-content: space-around
+      flex-wrap: wrap
+    &__time
+      margin-bottom: 0
+      margin-right: 10px
+      &-years
+        font-size: 55px
+    &__card
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 40%
+      margin-bottom: 20px
+      &-description
+        max-width: 200px
+        font-size: 20px
+    &__bg-skew
+      display: none
+
+  .wave-1, .wave-2, .wave-3, .wave-4
+    margin-top: 0
+    &::before
+      display: none
+
 @media (max-width: 768px)
   .main
     background: url(../img/main/main-bg-m.jpg) 0 0/100% auto no-repeat
@@ -176,6 +205,13 @@
       &-wrapper
         display: none
 
+  .guarantee
+    &__description
+      font-size: 30px
+    &__time
+      &-text
+        font-size: 16px
+
 @media (max-width: 500px)
   .main
     &__quality
@@ -203,6 +239,17 @@
         font-size: 16px
         max-width: 200px
 
+  .guarantee
+    &__time
+      margin: 0
+      width: 90px
+    &__card
+      justify-content: start
+      max-width: 100%
+      &-description
+        max-width: 70%
+    &__cards
+      justify-content: start
 @media (max-width: 480px)
   .main
     &__description
