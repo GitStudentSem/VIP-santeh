@@ -38,3 +38,55 @@ const company = new Swiper(".company__container", {
     },
   },
 });
+
+// Price swiper
+const price = new Swiper(".pricelist__container", {
+  direction: "horizontal",
+  speed: 1000,
+  loop: false,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  navigation: {
+    nextEl: ".pricelist__button-next",
+    prevEl: ".pricelist__button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      allowTouchMove: true,
+    },
+    500: {
+      slidesPerView: 2,
+      allowTouchMove: true,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      allowTouchMove: false,
+    },
+    1201: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      allowTouchMove: false,
+    },
+  },
+});
+
+// Accordeon
+var acc = document.getElementsByClassName("pricelist__more-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("pricelist__more-button-active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
