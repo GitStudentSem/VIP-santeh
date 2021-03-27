@@ -39,14 +39,14 @@ const company = new Swiper(".company__container", {
   },
 });
 
-// Price swiper
+// Pricelist swiper
 const price = new Swiper(".pricelist__container", {
   direction: "horizontal",
   speed: 1000,
   loop: false,
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".pricelist__pagination",
   },
 
   navigation: {
@@ -99,17 +99,12 @@ const examples = new Swiper(".examples__container", {
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".examples__pagination",
   },
 
   // Navigation arrows
   navigation: {
     nextEl: ".examples__button-next",
     prevEl: ".examples__button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
