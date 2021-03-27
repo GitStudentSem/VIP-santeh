@@ -104,8 +104,8 @@ const examples = new Swiper(".examples__container", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".examples__button-next",
+    prevEl: ".examples__button-prev",
   },
 
   // And if we need scrollbar

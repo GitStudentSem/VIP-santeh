@@ -1,6 +1,7 @@
 .examples
   font-family: $mainFont
   color: #24242E
+  margin-bottom: 100px
   &__container
     width: 100%
   &__title
@@ -34,17 +35,20 @@
     line-height: 120%
     border-left: 9px solid #1E489B
     padding: 15px 10px
-    &-icon
-      margin-right: 20px
     &-item
-      display: flex
       width: 100%
-      margin-bottom: 20px
-      &:nth-child(even)
-        margin-left: 40px
-      &:last-child
-        margin-bottom: 0
-
+      padding-left: 30px
+      &:nth-child(1)
+        background-image: url(../img/examples/icon-1.svg)
+        background-position: left center
+        background-repeat: no-repeat
+      &:nth-child(3)
+        background-image: url(../img/examples/icon-2.svg)
+        background-position: left center
+        background-repeat: no-repeat
+      &:nth-child(3)
+      &:not(:last-child)
+        margin-bottom: 20px
   &__photos
     &-container
       display: flex
@@ -52,7 +56,34 @@
     &-wrapper
       margin-right: 40px
       width: 289px
-      height: auto
+      max-height: 463px
       overflow: hidden
   &__slide
+    overflow: hidden
     display: flex
+  &__button
+    position: absolute
+    top: 50%
+    width: 40px
+    height: 20px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-color: transparent
+    transform: translateY(-50%)
+    &-wrapper
+      position: relative
+      width: 100px
+      height: 20px
+    &-prev
+      left: 0
+      background-image: url(../img/examples/prev.svg)
+    &-next
+      right: 0
+      background-image: url(../img/examples/next.svg)
+  &__top
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
