@@ -55,7 +55,7 @@
       &-wrapper
         width: 260px
 
-  .expert
+  .expert, .installer
     &__avatar
       padding: 20px
       margin-right: 20px
@@ -177,17 +177,14 @@
       &-wrapper
         display: none
 
-  .experts
+  .experts, .installers
     &__title
       text-align: center
 
-  .expert
-    flex-wrap: wrap
-    justify-content: center
-    text-align: center
+  .expert, .installer
+    flex-direction: column
     &__description
       max-width: 300px
-      min-height: 150px
 @media (max-width: 900px)
   .video
     margin-bottom: 60px
@@ -276,14 +273,13 @@
       &-description
         font-size: 23px
 
-  .experts
+  .experts, .installers
     &__skew
       right: 60%
 
-  .expert
+  .expert, .installer
     &__description
       max-width: 250px
-      min-height: 180px
 @media (max-width: 600px)
   .main
     &__title
@@ -331,13 +327,15 @@
         &:nth-last-child(2)
           display: none
 
-  .expert
+  .expert, .installer
     width: 100%
     margin-bottom: 40px
+    align-items: center
 
-  .experts
+  .experts, .installers
     &__wrapper
       flex-wrap: wrap
+      align-content: center
     &__skew
       display: none
 
@@ -396,11 +394,11 @@
     &__title
       font-size: 26px
 
-  .experts
+  .experts, .installers
     &__title
       font-size: 30px
 
-  .expert
+  .expert, .installer
     &__description
       min-height: 100px
       min-width: 100%
