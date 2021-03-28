@@ -4,6 +4,11 @@
   margin-bottom: 100px
   &__container
     width: 100%
+    &>.examples__pagination // High specificity to beat the swiper styles
+      width: 200px
+      display: block
+      margin-left: auto
+      margin-right: auto
   &__title
     font-style: normal
     font-weight: bold
@@ -54,6 +59,7 @@
       display: flex
   &__photo
     &-wrapper
+      position: relative
       margin-right: 40px
       width: 289px
       max-height: 463px

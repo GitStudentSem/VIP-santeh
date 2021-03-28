@@ -30,10 +30,10 @@ const company = new Swiper(".company__container", {
       //slidesPerColumnFill: "column", //как слайды должны заполнять строки, по столбцу или по строке
       //slidesPerColumn: 1, //Количесвтво слайдов в столбце
     },
-    500: {
+    501: {
       slidesPerView: 2,
     },
-    1000: {
+    1001: {
       slidesPerView: 3,
     },
   },
@@ -58,11 +58,12 @@ const price = new Swiper(".pricelist__container", {
       slidesPerView: 1,
       allowTouchMove: true,
     },
-    500: {
+    601: {
       slidesPerView: 2,
       allowTouchMove: true,
+      spaceBetween: 20,
     },
-    1000: {
+    1001: {
       slidesPerView: 3,
       spaceBetween: 20,
       allowTouchMove: false,
@@ -93,16 +94,13 @@ for (i = 0; i < acc.length; i++) {
 
 // Examples swiper
 const examples = new Swiper(".examples__container", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: ".examples__pagination",
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: ".examples__button-next",
     prevEl: ".examples__button-prev",
