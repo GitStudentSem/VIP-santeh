@@ -1,0 +1,40 @@
+.numbers
+  font-family: $mainFont
+  margin-bottom: 80px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 120%
+    color: #24242E
+    margin-bottom: 40px
+  &__cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__card
+    width: 32%
+    background-color: #F8F8F8
+    padding: 20px
+    &-number
+      position: relative
+      font-style: normal
+      font-weight: 800
+      font-size: 55px
+      line-height: 120%
+      color: #1E489B
+      &::after
+        content: ''
+        position: absolute
+        width: 40px
+        height: 40px
+        top: 0
+        right: 0
+        background-image: url(../img/numbers/like.svg)
+        background-repeat: no-repeat
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 120%
+      color: #24242E

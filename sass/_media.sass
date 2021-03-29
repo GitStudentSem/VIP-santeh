@@ -1,3 +1,5 @@
+// Made media queries every 100 pixels for the sake of experiment,
+// just wanted to see how it would look
 @media (max-width: 1300px)
   .quality
     &__bg
@@ -59,6 +61,7 @@
     &__avatar
       padding: 20px
       margin-right: 20px
+
 @media (max-width: 1000px)
   .header
     &__navigation
@@ -185,6 +188,10 @@
     flex-direction: column
     &__description
       max-width: 300px
+
+  .numbers
+    &__card
+      &:hover
 @media (max-width: 900px)
   .video
     margin-bottom: 60px
@@ -280,6 +287,15 @@
   .expert, .installer
     &__description
       max-width: 250px
+
+  .numbers
+    &__title
+      font-size: 36px
+    &__cards
+      flex-direction: column
+    &__card
+      width: 100%
+      margin-bottom: 30px
 @media (max-width: 600px)
   .main
     &__title
