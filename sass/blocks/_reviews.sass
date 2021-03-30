@@ -1,14 +1,14 @@
-.company
+.reviews
   position: relative
   margin-bottom: 124px
+  font-family: $mainFont
   &__pagination
     position: absolute
-    bottom: -50px
+    bottom: -30px
   &__container
     width: 100%
     min-height: 225px
   &__title
-    font-family: $mainFont
     font-style: normal
     font-weight: bold
     font-size: 40px
@@ -16,17 +16,37 @@
     color: #24242E
     margin-bottom: 54px
   &__slide
+    padding: 20px
     min-height: 225px
-    padding: 40px
     background-color: #F8F8F8
-    &-text
-      font-family: $mainFont
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__image
+    border: 1px solid black
+    padding: 10px
+    border-radius: 50%
+    margin-right: 30px
+  &__img
+    border-radius: 50%
+    width: 100px
+    height: 100px
+  &__description
+    &-name
       font-style: normal
       font-weight: normal
       font-size: 20px
       line-height: 120%
       color: #24242E
-      margin-top: 28px
+      margin-bottom: 5px
+    &-stars
+      margin-bottom: 20px
+    &-review
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 120%
+      color: #24242E
   &__button
     position: absolute
     z-index: 2
@@ -39,9 +59,9 @@
     background-color: transparent
     &-wrapper
       position: absolute
-      width: 120px
+      width: 100px
       right: 100px
-      top: 100px
+      top: 60px
     &-next
       right: 0
       background-image: url(../img/slider/next.svg)

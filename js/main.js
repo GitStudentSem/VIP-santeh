@@ -27,8 +27,6 @@ const company = new Swiper(".company__container", {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      //slidesPerColumnFill: "column", //как слайды должны заполнять строки, по столбцу или по строке
-      //slidesPerColumn: 1, //Количесвтво слайдов в столбце
     },
     501: {
       slidesPerView: 2,
@@ -104,5 +102,33 @@ const examples = new Swiper(".examples__container", {
   navigation: {
     nextEl: ".examples__button-next",
     prevEl: ".examples__button-prev",
+  },
+});
+
+// Revievs swiper
+const reviews = new Swiper(".reviews__container", {
+  grabCursor: true, // Показывает руку для перемещеня слайдов
+  slideToClickedSlide: false, // При нажатии на слайд делает его активным
+  spaceBetween: 20,
+  speed: 1000,
+  loop: true,
+
+  navigation: {
+    nextEl: ".reviews__button-next",
+    prevEl: ".reviews__button-prev",
+  },
+
+  pagination: {
+    clickable: true,
+    el: ".reviews__pagination",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    1001: {
+      slidesPerView: 2,
+    },
   },
 });
