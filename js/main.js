@@ -139,7 +139,7 @@ var j = 0;
 
 for (j = 0; j < acc.length; j++) {
   acc[j].addEventListener("click", function () {
-    this.classList.toggle("question__more-active");
+    this.classList.toggle("question__question-active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
