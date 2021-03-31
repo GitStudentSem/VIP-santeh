@@ -250,6 +250,17 @@
   .examples
     &__title
       font-size: 34px
+
+  .footer
+    &__logo
+      &-img
+        margin: 0
+    &__text
+      padding-left: 20px
+      border: none
+    &__icons
+      max-width: 120px
+
 @media (max-width: 700px)
   .main
     &__title
@@ -391,6 +402,17 @@
       &-skew
         flex-shrink: 0
         margin-bottom: 0
+
+  .footer
+    &__logo
+      flex-direction: column
+      margin-bottom: 20px
+      &-img
+        margin-bottom: 10px
+    &__wrapper
+      flex-direction: column
+    &__icons
+      max-width: 220px
 @media (max-width: 500px)
   .main
     &__title
