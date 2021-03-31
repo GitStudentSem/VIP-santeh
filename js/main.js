@@ -74,7 +74,7 @@ const price = new Swiper(".pricelist__container", {
   },
 });
 
-// Accordeon
+// Accordeon pricelist
 var acc = document.getElementsByClassName("pricelist__more-button");
 var i;
 
@@ -132,3 +132,19 @@ const reviews = new Swiper(".reviews__container", {
     },
   },
 });
+
+// Accordeon faq
+var acc = document.getElementsByClassName("question__more-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("question__more-button-active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
