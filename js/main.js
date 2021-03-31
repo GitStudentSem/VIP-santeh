@@ -134,12 +134,12 @@ const reviews = new Swiper(".reviews__container", {
 });
 
 // Accordeon faq
-var acc = document.getElementsByClassName("question__more-button");
-var i;
+var acc = document.getElementsByClassName("question__question");
+var j = 0;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("question__more-button-active");
+for (j = 0; j < acc.length; j++) {
+  acc[j].addEventListener("click", function () {
+    this.classList.toggle("question__more-active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
