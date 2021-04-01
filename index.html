@@ -405,8 +405,14 @@
           качества
         </h2>
         <div class="company__button-wrapper">
-          <button class="company__button company__button-prev"></button>
-          <button class="company__button company__button-next"></button>
+          <button
+            class="company__button company__button-prev"
+            aria-label="Предыдущий слайд"
+          ></button>
+          <button
+            class="company__button company__button-next"
+            aria-label="Следующий слайд"
+          ></button>
         </div>
         <!-- If we need pagination -->
         <div class="company__pagination"></div>
@@ -611,8 +617,14 @@
       <div class="container">
         <h2 class="pricelist__description">Услуги и цены</h2>
         <div class="pricelist__button-wrapper">
-          <button class="pricelist__button pricelist__button-prev"></button>
-          <button class="pricelist__button pricelist__button-next"></button>
+          <button
+            class="pricelist__button pricelist__button-prev"
+            aria-label="Предыдущий слайд"
+          ></button>
+          <button
+            class="pricelist__button pricelist__button-next"
+            aria-label="Следующий слайд"
+          ></button>
         </div>
         <!-- /.pricelist__button-wrapper -->
         <div class="swiper-container pricelist__container">
@@ -870,8 +882,14 @@
             Примеры выполненных сантехнических работ нашей компанией VIP Santeh
           </h2>
           <div class="examples__button-wrapper">
-            <button class="examples__button examples__button-prev"></button>
-            <button class="examples__button examples__button-next"></button>
+            <button
+              class="examples__button examples__button-prev"
+              aria-label="Предыдущий слайд"
+            ></button>
+            <button
+              class="examples__button examples__button-next"
+              aria-label="Следующий слайд"
+            ></button>
           </div>
         </div>
         <!-- /.examples__top-wrapper -->
@@ -1460,8 +1478,14 @@
       <div class="container">
         <h2 class="reviews__title">Отзывы клиентов</h2>
         <div class="reviews__button-wrapper">
-          <button class="reviews__button reviews__button-prev"></button>
-          <button class="reviews__button reviews__button-next"></button>
+          <button
+            class="reviews__button reviews__button-prev"
+            aria-label="Предыдущий слайд"
+          ></button>
+          <button
+            class="reviews__button reviews__button-next"
+            aria-label="Следующий слайд"
+          ></button>
         </div>
 
         <!-- /.reviews-button--wrapper -->
@@ -1475,7 +1499,7 @@
                   <img
                     class="reviews__img"
                     src="img/reviews/avatar-1-small.jpg"
-                    alt=""
+                    alt="Максим Ермолаев"
                   />
                 </picture>
               </div>
@@ -1524,7 +1548,7 @@
                   <img
                     class="reviews__img"
                     src="img/reviews/avatar-2-small.jpg"
-                    alt=""
+                    alt="Иван Гончаров"
                   />
                 </picture>
               </div>
@@ -1572,7 +1596,7 @@
                   <img
                     class="reviews__img"
                     src="img/reviews/avatar-3-small.jpg"
-                    alt=""
+                    alt="Елена Орлова"
                   />
                 </picture>
               </div>
@@ -1833,24 +1857,30 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__logo">
+          <a href="#" class="footer__logo">
             <img
               src="img/footer/logo.svg"
               alt="Логотип VIP SANTEH"
               class="footer__logo-img"
             />
             <p class="footer__text">Сантехнические услуги в Москве</p>
-          </div>
+          </a>
           <div class="footer__icons">
-            <img
-              src="img/footer/vk.svg"
-              alt="Вконтакте"
-              class="footer__icon"
-            /><img
-              src="img/footer/inst.svg"
-              alt="Instagram"
-              class="footer__icon"
-            /><img src="img/footer/yt.svg" alt="YouTube" class="footer__icon" />
+            <a href="#"
+              ><img
+                src="img/footer/vk.svg"
+                alt="Вконтакте"
+                class="footer__icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer/inst.svg"
+                alt="Instagram"
+                class="footer__icon"
+            /></a>
+            <a href="#"
+              ><img src="img/footer/yt.svg" alt="YouTube" class="footer__icon"
+            /></a>
           </div>
           <!-- /.footer__icons -->
         </div>
