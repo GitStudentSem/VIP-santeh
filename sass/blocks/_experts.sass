@@ -1,9 +1,9 @@
 .experts
+  font-family: $mainFont
+  position: relative
+  color: #fff
   background-color: #24242E
   padding: 70px 0
-  font-family: $mainFont
-  color: #fff
-  position: relative
   &__title
     font-style: normal
     font-weight: bold
@@ -17,30 +17,30 @@
     z-index: 2
   &__skew
     position: absolute
-    height: 123px
-    width: 123px
     transform: skew(-30deg)
-    background-color: #353542
     right: 25%
     bottom: 0
+    background-color: #353542
+    height: 123px
+    width: 123px
     &:after
       content: ''
       position: absolute
+      left: 100%
+      bottom: 100%
       background-color: #353542
       width: 77px
       height: 77px
-      left: 100%
-      bottom: 100%
 
 .expert
   display: flex
   width: 48%
   align-items: flex-start
   &__avatar
-    padding: 24px
     border-radius: 50%
     border: 5px dashed #353542
     margin-right: 20px
+    padding: 24px
     &-image
       border-radius: 50%
   &__description

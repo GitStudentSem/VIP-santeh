@@ -6,6 +6,22 @@ burger.addEventListener("click", function () {
     .classList.toggle("header__navigation-visible");
 });
 
+// Smooth scroll
+(function () {
+  const scrollLinks = document.querySelectorAll("a.scroll-link");
+
+  for (const scrollLink of scrollLinks) {
+    scrollLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      const id = scrollLink.getAttribute("href");
+      document.querySelector(id).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  }
+})();
+
 // Company swiper
 const company = new Swiper(".company__container", {
   grabCursor: true, // Показывает руку для перемещеня слайдов

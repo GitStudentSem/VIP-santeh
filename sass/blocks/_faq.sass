@@ -9,24 +9,24 @@
     color: #24242E
     margin-bottom: 50px
 .question
-  padding: 5px 10px
   background-color: #F8F8F8
+  padding: 5px 10px
   &__question
     position: relative
-    color: #fff
-    padding: 15px 30px 15px 15px
-    width: 100%
     text-align: left
     border: none
     background-color: #24242E
     cursor: pointer
+    color: #fff
+    width: 100%
     margin-bottom: 20px
+    padding: 15px 30px 15px 15px
     &:after
+      content: '\002B'
       position: absolute
       right: 15px
       top: 50%
       transform: translateY(-50%)
-      content: '\002B'
     &:hover
       background-color: #1E489B
     &-active
@@ -34,10 +34,10 @@
       &:after
         content: '\2212'
   &__answer
-    max-height: 0
     overflow: hidden
     font-style: normal
     font-weight: 300
     font-size: 14px
     line-height: 120%
     color: #24242E
+    max-height: 0

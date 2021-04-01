@@ -5,8 +5,8 @@
   &__container
     width: 100%
     &>.examples__pagination // High specificity to beat the swiper styles
-      width: 200px
       display: block
+      width: 200px
       margin-left: auto
       margin-right: auto
   &__title
@@ -60,24 +60,24 @@
   &__photo
     &-wrapper
       position: relative
-      margin-right: 40px
+      overflow: hidden
       width: 289px
       max-height: 463px
-      overflow: hidden
+      margin-right: 40px
   &__slide
     overflow: hidden
     display: flex
   &__button
     position: absolute
     top: 50%
-    width: 40px
-    height: 20px
     border: none
     cursor: pointer
     background-repeat: no-repeat
     background-position: center
     background-color: transparent
     transform: translateY(-50%)
+    width: 40px
+    height: 20px
     &-wrapper
       position: relative
       width: 100px

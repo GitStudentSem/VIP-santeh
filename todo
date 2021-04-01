@@ -6,12 +6,15 @@ font-family: 'Exo 2', sans-serif;
         <img src="img/avatar.jpg" alt="The president giving an award." />
       </picture>
 - анимамция выпадающего меню
-- https://www.youtube.com/watch?v=yobeloovhlU&feature=emb_logo
-- ЗАголовки аш2 в каждой секции
-- фавикон
+- https://www.youtube.com/watch?v=yobeloovhlU&feature=emb_logo @done
+- Заголовки аш2 в каждой секции @done
+  - guarantee @done
+  - main @done
+- фавикон @done
 - модальные окна
 - отправка форм через пхп
 - плавное опускание аккордеона
-- проверить все блоки общие стили текста вынести в секцию
+- проверить все блоки общие стили текста вынести в секцию @done
 - Слайды вправо влево когда докручиваешь до них
 - прикрепить файл изменить внешний вид
+- плавная прокрутка из шапки

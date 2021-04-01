@@ -1,6 +1,7 @@
 .company
+  font-family: $mainFont
   position: relative
-  margin-bottom: 124px
+  margin-bottom: 100px
   &__pagination
     position: absolute
     bottom: -50px
@@ -8,7 +9,6 @@
     width: 100%
     min-height: 225px
   &__title
-    font-family: $mainFont
     font-style: normal
     font-weight: bold
     font-size: 40px
@@ -20,7 +20,6 @@
     padding: 40px
     background-color: #F8F8F8
     &-text
-      font-family: $mainFont
       font-style: normal
       font-weight: normal
       font-size: 20px
@@ -30,18 +29,18 @@
   &__button
     position: absolute
     z-index: 2
-    width: 40px
-    height: 20px
     border: none
     cursor: pointer
     background-repeat: no-repeat
     background-position: center
     background-color: transparent
+    width: 40px
+    height: 20px
     &-wrapper
       position: absolute
-      width: 120px
       right: 100px
       top: 100px
+      width: 120px
     &-next
       right: 0
       background-image: url(../img/slider/next.svg)
