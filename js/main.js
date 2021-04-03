@@ -187,12 +187,12 @@ $(document).ready(function () {
   }
 
   // Modal form
-  const form = $(".link__form"),
+  const form = $(".form"),
     funcForm = () => {
       swal({
         title: "Внимание!",
         text:
-          "Это учебный сайт, поэтому вы не можете отправить заявку. В Вашем проете такая возможность обязаьельно будет!",
+          "Это учебный сайт, поэтому вы не можете отправить заявку. В Вашем проете такая возможность обязательно будет!",
         icon: "warning",
         button: "Хорошо!",
       });
@@ -200,12 +200,12 @@ $(document).ready(function () {
   form.on("click", funcForm);
 
   // modal Phone
-  const phone = $(".link__phone"),
+  const phone = $(".phone"),
     funcPhone = () => {
       swal({
         title: "Внимание!",
         text:
-          "Это учебный сайт, поэтому вы не можете позвонить по этому номеру. В Вашем проете такая возможность обязаьельно будет!",
+          "Это учебный сайт, поэтому вы не можете позвонить по этому номеру. В Вашем проете такая возможность обязательно будет!",
         icon: "warning",
         button: "Хорошо!",
       });
@@ -213,7 +213,7 @@ $(document).ready(function () {
   phone.on("click", funcPhone);
 
   // modal Contacts
-  const contact = $(".link__contact"),
+  const contact = $(".contact"),
     funcContact = () => {
       swal({
         title: "Внимание!",
