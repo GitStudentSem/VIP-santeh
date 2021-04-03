@@ -186,31 +186,42 @@ $(document).ready(function () {
     });
   }
 
-  // Modal window
-  const element = $(".modal__open"),
-    func = () => {
+  // Modal form
+  const form = $(".link__form"),
+    funcForm = () => {
       swal({
         title: "Внимание!",
         text:
-          "Этот сайт - учебный проект: некоторые функции отсутствуют либо находятся в разработке.",
+          "Это учебный сайт, поэтому вы не можете отправить заявку. В Вашем проете такая возможность обязаьельно будет!",
         icon: "warning",
         button: "Хорошо!",
       });
     };
-  element.on("click", func);
-  ///
-  $(".form").each(function () {
-    $(this).validate({
-      errorClass: "invalid",
-      messages: {
-        name: {
-          required: "Это поле обязательно",
-        },
-        phone: {
-          required: "Введите номер телефона",
-          minlength: "Введите его полностью",
-        },
-      },
-    });
-  });
+  form.on("click", funcForm);
+
+  // modal Phone
+  const phone = $(".link__phone"),
+    funcPhone = () => {
+      swal({
+        title: "Внимание!",
+        text:
+          "Это учебный сайт, поэтому вы не можете позвонить по этому номеру. В Вашем проете такая возможность обязаьельно будет!",
+        icon: "warning",
+        button: "Хорошо!",
+      });
+    };
+  phone.on("click", funcPhone);
+
+  // modal Contacts
+  const contact = $(".link__contact"),
+    funcContact = () => {
+      swal({
+        title: "Внимание!",
+        text:
+          "Это учебный сайт, поэтому вы не можете с нами связаться. Но вы можете написать разработчику этого сайта: www.semen-purnemcev.ru",
+        icon: "warning",
+        button: "Хорошо!",
+      });
+    };
+  contact.on("click", funcContact);
 });

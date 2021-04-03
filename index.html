@@ -98,15 +98,19 @@
     <script src="js/swiper-bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
-  <body class="body__scroll">
-    <header class="header container">
-      <a href="#" class="header__logo" aria-label="Логотип кампании VIP Santeh">
+  <body>
+    <header class="header container" id="header">
+      <span
+        href="#"
+        class="header__logo"
+        aria-label="Логотип кампании VIP Santeh"
+      >
         <img
           class="header__logo-logo"
           src="img/header/logo.svg"
           alt="Логотип кампании VIP Santeh"
         />
-        <h1 class="header__logo-text">Сантехнические услуги в Москве</h1></a
+        <h1 class="header__logo-text">Сантехнические услуги в Москве</h1></span
       >
       <nav class="header__navigation">
         <ul class="header__list">
@@ -132,17 +136,26 @@
             >
           </li>
           <li class="header__social">
-            <a class="header__social-link" href="#"
+            <a
+              class="header__social-link link__contact"
+              href="https://semen-purnemcev.ru"
+              target="_blank"
               ><img
                 class="header__social-icon"
                 src="img/header/vk.svg"
                 alt="Значок Вконтаке" /></a
-            ><a class="header__social-link" href="#"
+            ><a
+              class="header__social-link link__contact"
+              href="https://semen-purnemcev.ru"
+              target="_blank"
               ><img
                 class="header__social-icon"
                 src="img/header/youtube.svg"
                 alt="Значок YouTube" /></a
-            ><a class="header__social-link" href="#"
+            ><a
+              class="header__social-link link__contact"
+              href="https://semen-purnemcev.ru"
+              target="_blank"
               ><img
                 class="header__social-icon"
                 src="img/header/instagram.svg"
@@ -150,28 +163,24 @@
             /></a>
           </li>
           <li class="header__social">
-            <button class="header__button modal__open" type="button">
+            <button class="header__button link__form" type="button">
               Заказать звонок
             </button>
           </li>
         </ul>
       </nav>
-      <a class="header__contact modal__open" href="#!">
-        <span class="header__contact-number">8 (495) 108 24 72</span>
+      <a class="header__contact link__phone" href="#!">
+        <span class="header__contact-number">8 (000) 00 00 00</span>
         <span class="header__contact-booking">Заказать звонок</span>
       </a>
       <!-- /.header__contact -->
-      <a
-        href="#"
-        class="header__logo-m"
-        aria-label="Логотип кампании VIP Santeh"
-      >
+      <span class="header__logo-m">
         <img
           class="header__logo-m"
           src="img/header/logo-m.svg"
           alt="Логотип кампании VIP Santeh"
         />
-        <span class="header__logo-text-m">8 (495) 108 24 72</span></a
+        <span class="header__logo-text-m">8 (000) 000 00 00</span></span
       >
       <button class="burger" aria-label="Мобильное меню"></button>
     </header>
@@ -235,7 +244,7 @@
           <!-- /.main__quality -->
         </div>
         <!-- /.main__qualitys -->
-        <button class="main__button button modal__open" type="button">
+        <button class="main__button button" type="button">
           Заказать монтаж
         </button>
       </div>
@@ -269,7 +278,7 @@
         </a>
       </div>
       <!-- /.video__wrapper -->
-      <button class="video__button button modal__open">Оставить заявку</button>
+      <button class="video__button button link__form">Оставить заявку</button>
     </section>
     <!-- /.video -->
     <section class="why container" id="why">
@@ -381,7 +390,7 @@
           устройство для измерения давления в трубах и тест на качество воды в
           подарок!*
         </p>
-        <form class="form-1__form form" action="" method="POST">
+        <div class="form-1__form" action="" method="POST">
           <input
             class="form-1__input"
             type="text"
@@ -398,10 +407,10 @@
             minlength="14"
             data-mask="+7 (000) 000 00 00"
           />
-          <button class="form-1__button button modal__open">
+          <button class="form-1__button button link__form">
             Оставить заявку
           </button>
-        </form>
+        </div>
         <span class="form-1__footnote"
           >*за отзыв после проведения сантехнических работ</span
         >
@@ -584,17 +593,9 @@
             minlength="14"
             data-mask="+7 (000) 000 00 00"
           />
-          <button class="form-2__button button modal__open">
+          <button class="form-2__button button link__form">
             Оставить заявку
           </button>
-          <label class="form-2__photo">
-            <div class="form-2__photo-text">
-              <img src="img/form/form-2-icon.svg" alt="Значок скрепки" />
-              <span>Прикрепить фото</span>
-            </div>
-            <!-- /.form-2__photo-image -->
-            <input type="file" />
-          </label>
         </div>
       </div>
       <!-- /. container -->
@@ -908,7 +909,9 @@
             minlength="14"
             data-mask="+7 (000) 000 00 00"
           />
-          <button class="form-3__button button">Получить расчет</button>
+          <button class="form-3__button button link__form">
+            Получить расчет
+          </button>
         </div>
         <div class="form-3__bg">
           <picture>
@@ -1518,7 +1521,9 @@
             minlength="14"
             data-mask="+7 (000) 000 00 00"
           />
-          <button class="form-1__button button">Оставить заявку</button>
+          <button class="form-1__button button link__form">
+            Оставить заявку
+          </button>
         </div>
         <span class="form-1__footnote">+ тест на качество воды в подарок!</span>
         <div class="form-1__bg">
@@ -1870,7 +1875,9 @@
             minlength="14"
             data-mask="+7 (000) 000 00 00"
           />
-          <button class="form-3__button button">Получить расчет</button>
+          <button class="form-3__button button link__form">
+            Получить расчет
+          </button>
         </div>
         <div class="form-3__bg">
           <picture>
@@ -1897,7 +1904,7 @@
             class="contacts__card-icon"
           />
           <p class="contacts__card-text">Позвоните по номеру:</p>
-          <a href="+74951082472" class="contacts__card-link"
+          <a href="#!" class="contacts__card-link link__phone"
             >8 (495) 108 24 72</a
           >
         </div>
@@ -1909,7 +1916,10 @@
             class="contacts__card-icon"
           />
           <p class="contacts__card-text">Или напишите нам на почту:</p>
-          <a href="info@vip-santeh.com" class="contacts__card-link"
+          <a
+            href="https://semen-purnemcev.ru"
+            class="contacts__card-link link__contact"
+            target="_blank"
             >info@vip-santeh.com</a
           >
         </div>
@@ -1921,7 +1931,7 @@
             class="contacts__card-icon"
           />
           <p class="contacts__card-text">Наш сайт:</p>
-          <a href="www.vip-santeh.com" class="contacts__card-link"
+          <a href="#header" class="contacts__card-link scroll-link"
             >www.vip-santeh.com</a
           >
         </div>
@@ -1933,7 +1943,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a href="#" class="footer__logo">
+          <a href="#header" class="footer__logo scroll-link">
             <img
               src="img/footer/logo.svg"
               alt="Логотип VIP SANTEH"
@@ -1961,6 +1971,15 @@
           <!-- /.footer__icons -->
         </div>
         <!-- /.footer__wrapper -->
+        <div class="footer__autor">
+          <p class="footer__autor-text">Разработчик Семён Пурнемцев.</p>
+          <a
+            href="https://semen-purnemcev.ru"
+            class="footer__autor-link"
+            target="_blank"
+            >Связаться</a
+          >
+        </div>
       </div>
       <!-- /.container -->
     </footer>
