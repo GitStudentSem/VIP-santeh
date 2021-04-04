@@ -1,10 +1,9 @@
 .form-3
-  background-color: #24242E
-  position: relative
-  padding: 45px 0
-  overflow: hidden
-  margin-bottom: 75px
   font-family: $mainFont
+  position: relative
+  overflow: hidden
+  background-color: #24242E
+  padding: 45px 0
   &__form
     display: flex
     flex-wrap: wrap
@@ -16,11 +15,11 @@
     font-weight: bold
     font-size: 27px
     line-height: 120%
+    position: relative
+    z-index: 11
     color: #FFFFFF
     margin-bottom: 47px
     max-width: 813px
-    position: relative
-    z-index: 11
   &__input
     background-color: #353542
     border: none
@@ -32,13 +31,13 @@
     margin-right: 60px
     padding: 21px 30px 21px 30px
   &__button
-    height: 69px
-    background-color: #1E489B
     font-style: normal
     font-weight: normal
     font-size: 18px
     line-height: 27px
     color: #FFFFFF
+    background-color: #1E489B
+    height: 69px
     padding: 0 69px
   &__bg
     position: absolute
@@ -47,26 +46,26 @@
     &::after
       content: ''
       position: absolute
+      top: 0
+      right: 100%
+      transform: skew(30deg)
       background-color: #1E489B
       width: 55px
       height: 55px
-      right: 100%
-      top: 0
-      transform: skew(30deg)
     &-img
       position: relative
       z-index: 8
     &__skew
-      height: 175px
-      width: 175px
       transform: skew(-30deg)
       background-color: #353542
+      height: 175px
+      width: 175px
       &::after
         content: ''
         position: absolute
-        background-color: #353542
-        width: 119px
-        height: 119px
         left: 100%
         bottom: 100%
         cursor: auto
+        background-color: #353542
+        width: 119px
+        height: 119px

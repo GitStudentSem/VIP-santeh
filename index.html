@@ -62,7 +62,6 @@
       rel="icon"
       type="image/png"
       sizes="192x192"
-      favicon
       href="favicon/android-icon-192x192.png"
     />
     <link
@@ -100,18 +99,10 @@
   </head>
   <body>
     <header class="header container" id="header">
-      <span
-        href="#"
-        class="header__logo"
-        aria-label="Логотип кампании VIP Santeh"
-      >
-        <img
-          class="header__logo-logo"
-          src="img/header/logo.svg"
-          alt="Логотип кампании VIP Santeh"
-        />
-        <h1 class="header__logo-text">Сантехнические услуги в Москве</h1></span
-      >
+      <h1 class="header__logo" aria-label="Логотип кампании VIP Santeh">
+        <img class="header__logo-logo" src="img/header/logo.svg" />
+        <span class="header__logo-text">Сантехнические услуги в Москве</span>
+      </h1>
       <nav class="header__navigation">
         <ul class="header__list">
           <li class="header__item">
@@ -244,7 +235,7 @@
           <!-- /.main__quality -->
         </div>
         <!-- /.main__qualitys -->
-        <button class="main__button button" type="button">
+        <button class="main__button button form" type="button">
           Заказать монтаж
         </button>
       </div>
@@ -389,11 +380,11 @@
     <!-- /.why -->
     <section class="form-1">
       <div class="container">
-        <p class="form-1__description">
+        <h2 class="form-1__description">
           Оставьте заявку на выезд монтажника сантехнических систем и получите
           устройство для измерения давления в трубах и тест на качество воды в
           подарок!*
-        </p>
+        </h2>
         <div class="form-1__form" action="" method="POST">
           <input
             class="form-1__input"
@@ -453,7 +444,6 @@
         </div>
         <!-- If we need pagination -->
         <div class="company__pagination"></div>
-        <!-- /.company-button--wrapper -->
         <div class="swiper-container company__container">
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -579,10 +569,10 @@
     <!-- /.advantage -->
     <section class="form-2">
       <div class="container">
-        <p class="form-2__description">
+        <h2 class="form-2__description">
           Оставьте заявку для оценки стоимости работ по фото или выезда
           специалиста на объект
-        </p>
+        </h2>
         <div class="form-2__form form" action="" method="POST">
           <input
             class="form-2__input"
@@ -892,11 +882,11 @@
     <!-- /.pricelist -->
     <section class="form-3">
       <div class="container">
-        <p class="form-3__description">
+        <h2 class="form-3__description">
           Точная стоимость сантехнических работ оговаривается индивидуально
           после ознакомления с проектной документацией и выезда монтажника на
           объект
-        </p>
+        </h2>
         <div class="form-3__form form" action="" method="POST">
           <input
             class="form-3__input"
@@ -1500,10 +1490,10 @@
     <!-- /.booking -->
     <section class="form-1">
       <div class="container">
-        <p class="form-1__description">
+        <h2 class="form-1__description">
           Закажите услуги монтажа сантехнических систем и получите устройство
           для измерения давления в трубах
-        </p>
+        </h2>
         <div class="form-1__form form" action="" method="POST">
           <input
             class="form-1__input"
